@@ -12,29 +12,50 @@
 </head>
 
 <body>
+
+     <!-- whatsapp button -->
+     <div class="fixed bottom-20 right-5">
+        <button class="h-14 w-14 rounded-full bg-green-500"><i class="fa-brands fa-whatsapp text-4xl text-white"></i></button>
+    </div>
+
+    <!-- navMenu -->
+    <div class="navMenu hidden h-screen w-full absolute backdrop-blur-sm z-40 pt-6 ps-10 bg-slate-200/30">
+        <div class="cancelIcon">
+            <i class="fa fa-x text-2xl font-extralight text-black cursor-pointer"></i>
+        </div>
+        <div class="pt-4 space-y-4">
+            <button
+                class="h-16 w-full text-2xl text-black text-start border-solid border-b border-black hover:ps-12 duration-200 ease-linear">Home</button>
+            <button
+                class="h-16 w-full text-2xl text-black text-start border-solid border-b border-black hover:ps-12 duration-100 ease-linear">About</button>
+            <button
+                class="h-16 w-full text-2xl text-black text-start border-solid border-b border-black hover:ps-12 duration-100 ease-linear">Products</button>
+            <button
+                class="h-16 w-full text-2xl text-black text-start border-solid border-b border-black hover:ps-12 duration-100 ease-linear">Contact Us</button>
+        </div>
+    </div>
+
+
     <nav class="p-4 h-16 w-screen flex justify-between fixed z-10 bg-white">
         <div class="h-full text-2xl text-black">
             <h1><span class="font-bold text-blue-700">oxy</span>Blue</h1>
         </div>
         <div class="h-full text-2xl text-black text-end pe-4">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars navIcon cursor-pointer"></i>
         </div>
     </nav>
 
     <main class="min-h-screen bg-waterHome bg-cover bg-fixed">
-        <!-- Home Page -->
-        <div class="h-screen">
-            <div class="h-1/2 text-center pt-60">
-                <h1 class="text-6xl text-blue-600 font-medium">OXYBlue Water</h1>
-            </div>
-            <div class="h-1/2 text-center space-y-4">
-                <p class="text-2xl font-extralight text-black">Healthy & Clean Water</p>
-                <div class="space-x-6">
+        <div class="h-screen flex">
+            <div class="h-full  ps-4 space-y-10 pt-40 items-center">
+                <h1 class="text-6xl text-blue-900 items-center">Clean And Pure</h1>
+                <p class="text-sm text-gray w-1/2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente
+                    fugiat repellendus rerum beatae consequuntur a quo. Quasi quaerat nulla recusandae repellat. Omnis
+                    excepturi enim nulla delectus eum laborum a.</p>
                     <button class="h-10 w-32 bg-white rounded-xl hover:bg-black hover:text-white duration-300">Download
                         <i class="fa-brands fa-google-play"></i></button>
                     <button class="h-10 w-32 bg-white rounded-xl hover:bg-black hover:text-white duration-300">Download
                         <i class="fa-brands fa-app-store"></i></button>
-                </div>
             </div>
         </div>
     </main>
@@ -90,7 +111,7 @@
     <div class="min-h-screen py-4 space-y-4 lg:space-y-0 lg:flex lg:px-0 lg:pt-16 lg:space-x-8 justify-center">
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card1
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-prod1 bg-cover bg-center"></div>
+            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.40</p>
@@ -98,7 +119,7 @@
         </div>
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card1
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-prod2 bg-cover bg-center"></div>
+            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.40</p>
@@ -106,7 +127,7 @@
         </div>
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card3
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-prod3 bg-cover bg-center"></div>
+            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.120</p>
@@ -126,7 +147,7 @@
                 you.</p>
         </div>
         <div class="h-2/3 flex justify-center items-center">
-            <div class="bg-white h-4/5 w-8/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] py-6 px-8 space-y-2 rounded-xl">
+            <div class="bg-white h-4/5 w-4/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] py-6 px-4 space-y-2 rounded-xl">
                 <div>
                     <h1>Name</h1>
                     <input type="text" name="name" id="name" class="bg-slate-200 rounded-md pl-2 w-full" placeholder="Your Name">
@@ -169,5 +190,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

@@ -19,3 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+const navButton = document.querySelector('.navIcon');
+const navMenu = document.querySelector('.navMenu');
+const cancelIcon = document.querySelector('.cancelIcon');
+
+navButton.addEventListener('click', () => {
+    navMenu.classList.remove('hidden');
+});
+
+cancelIcon.addEventListener('click', () => {
+    navMenu.classList.add('hidden');
+});
