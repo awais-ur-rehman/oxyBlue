@@ -10,7 +10,39 @@
     <link href="dist/output.css" rel="stylesheet">
     <title>OXYBlue</title>
 </head>
-
+<style>
+.home{
+    background-image: url(images/waterHome.jpg);
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+.pro1{
+    background-image: url(images/gallon.png);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+}
+.pro2{
+    background-image: url(images/gallon.png);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+}
+.pro3{
+    background-image: url(images/gallon.png);
+    object-fit: contain;
+    background-position: center;
+    background-size: contain;
+}
+.pure{
+    background-image: url(images/pureWater.jpg);
+    background-attachment: fixed;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+</style>
 <body>
 
      <!-- whatsapp button -->
@@ -45,7 +77,7 @@
         </div>
     </nav>
 
-    <main class="min-h-screen bg-waterHome bg-cover bg-fixed">
+    <main class="min-h-screen home">
         <div class="h-screen flex">
             <div class="h-full  ps-4 space-y-10 pt-40 items-center">
                 <h1 class="text-6xl text-blue-900 items-center">Clean And Pure</h1>
@@ -111,7 +143,7 @@
     <div class="min-h-screen py-4 space-y-4 lg:space-y-0 lg:flex lg:px-0 lg:pt-16 lg:space-x-8 justify-center">
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card1
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
+            <div class="h-5/6 pro1"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.40</p>
@@ -119,7 +151,7 @@
         </div>
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card1
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
+            <div class="h-5/6 pro2"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.40</p>
@@ -127,7 +159,7 @@
         </div>
         <div class="h-72 w-56 mx-auto lg:mx-0 border border-white shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card card3
         transition transform scale-80 hover:scale-100 duration-300 lg:h-96 lg:w-56">
-            <div class="h-5/6 bg-gallon bg-cover bg-center"></div>
+            <div class="h-5/6 pro3"></div>
             <div class="h-1/6 text-center">
                 <h1 class="text-black">lorem</h1>
                 <p class="font-extralight text-black">Price: Rs.120</p>
@@ -135,8 +167,8 @@
         </div>
     </div>
 
-    <div class="h-96 bg-pure bg-cover bg-center bg-fixed ps-6 pt-60 mt-4">
-        <h1 class="text-2xl text-white font-extrabold">CLEAN <br> WATER</h1>
+    <div class="h-96 pure ps-6 pt-60 mt-4">
+        <h1 class="text-2xl text-blue-700 font-extrabold">CLEAN <br> WATER</h1>
     </div>
 
     <!-- contact -->
@@ -147,7 +179,7 @@
                 you.</p>
         </div>
         <div class="h-2/3 flex justify-center items-center">
-            <div class="bg-white h-4/5 w-4/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] py-6 px-4 space-y-2 rounded-xl">
+            <div class="bg-white h-4/5 w-8/12 lg:w-4/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] py-6 px-4 space-y-2 rounded-xl">
                 <div>
                     <h1>Name</h1>
                     <input type="text" name="name" id="name" class="bg-slate-200 rounded-md pl-2 w-full" placeholder="Your Name">
